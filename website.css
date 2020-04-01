@@ -61,7 +61,7 @@ header #toggle::after{
     width: 100%;
     min-height: 100vh;
     padding: 200px 50px 10px;
-    background: url(lanight.jpg);
+    background: url('https://res.cloudinary.com/dyxbyhfxy/image/upload/c_scale,w_1510/v1585723513/lanight_zlqcix.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
