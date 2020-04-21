@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(future.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+       
+}
+.sign-up-form{
+    width: 200px;
+    background: black;
+    padding: 60px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+
+.sign-up-form h1{
+    color: #fff;
+    margin-bottom: 60px;
+
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px ;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.text-area{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    text-align: left !important;
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+button{
+    color: #fff;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.signup-btn{
+    background-color: rgb(12, 102, 238);
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+
+@media {
+    max-width: 100%;
+}
+p{
+    color: #fff;
+}

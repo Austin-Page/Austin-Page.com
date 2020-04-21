@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    z-index: 10000;
+    transition: 0.6s;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header #toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+header #toggle:before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+header #toggle::after{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+.banner.active header #toggle::before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.banner.active header #toggle::after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 200px 50px 10px;
+    background: url('https://res.cloudinary.com/dyxbyhfxy/image/upload/c_scale,w_1510/v1585723513/lanight_zlqcix.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 2;
+}
+.banner.active{
+    transform: translateX(-400px);
+}
+#navigation{
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 400px;
+    height: 100vh;
+    background: rgb(12, 12, 12);
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+#navigation.active{
+    right: 0;
+}
+#navigation ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#navigation ul li{
+    list-style: none;
+}
+#navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.content{
+    max-width: 600px;
+}
+.content h2{
+    color: #fff;
+    font-size: 3.0em;
+    padding-bottom: 10px;
+}
+.content h2 span {
+     color: rgb(172, 172, 172);
+     font-size: 1.2em;
+     padding-bottom: 40px;
+}
+.content p{
+    color: #fff;
+   
+}
+.sci{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 100px;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    margin: 10px 0 0;
+}
+@media {
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
