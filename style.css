@@ -3,6 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h2{
+    font-family: roboto;
+}
+span{
+    font-family: roboto;
+    font-size: 1.5rem;
+}
+a.logo{
+    font-family: roboto;
+}
+p{
+    font-family: roboto;
+}
+
 header{
     position: absolute;
     top: 0;
@@ -108,12 +123,12 @@ header #toggle::after{
 }
 .content h2{
     color: #fff;
-    font-size: 3.0em;
+    font-size: 2.5em;
     padding-bottom: 10px;
 }
 .content h2 span {
      color: rgb(172, 172, 172);
-     font-size: 1.2em;
+     font-size: 1em;
      padding-bottom: 40px;
 }
 .content p{
@@ -146,6 +161,8 @@ header #toggle::after{
 a{
     text-decoration: none;
     color: white;
+    font-family: roboto;
+    font-size: 2rem;
 }
 a:visited{
     text-decoration: none;
